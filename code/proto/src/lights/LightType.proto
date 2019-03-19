@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package atom.proto.lights;
+
+enum LightType {
+	kLightTypeAmbient=0;
+	kLightTypeDirectional=1;
+	kLightTypeSpot=2;
+	kLightTypePoint=3;
+}

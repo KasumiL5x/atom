@@ -1,0 +1,33 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "materials/TexturedParameter.proto";
+
+message Anisotropic {
+	//
+	// lambert stuff
+
+	TexturedParameter Color=1;             /**< Base color, as Color. */
+	TexturedParameter Transparency=2;      /**< Transparent color, as Color. */
+	TexturedParameter AmbientColor=3;      /**< Ambient color, as Color. */
+	TexturedParameter Incandescence=4;     /**< Incandescent color, as Color. */
+	string BumpMap=5;                      /**< Name of bump map texture. */
+	TexturedParameter DiffuseAmount=6;     /**< Diffuse intensity, as float. */
+	TexturedParameter Translucence=7;      /**< Translucent amount, as float. */
+	TexturedParameter TranslucenceDepth=8; /**< Translucent depth, as float. */
+	TexturedParameter TranslucenceFocus=9; /**< Translucent focus, as float. */
+	TexturedParameter GlowIntensity=10;    /**< Glow intensity, as float. */
+
+	//
+	// anisotropic stuff
+	
+	TexturedParameter Angle=11;          /**< Angle, as float. */
+	TexturedParameter SpreadX=12;        /**< Spread X, as float. */
+	TexturedParameter SpreadY=13;        /**< Spread Y, as float. */
+	TexturedParameter Roughness=14;      /**< Surface roughness, as float. */
+	TexturedParameter FresnelIndex=15;   /**< Fresnel index of refraction, as float. */
+	TexturedParameter SpecularColor=16;  /**< Specular color, as Color. */
+	TexturedParameter Reflectivity=17;   /**< Reflectivity amount, as float. */
+	TexturedParameter ReflectedColor=18; /**< Reflected color, as Color. */
+}

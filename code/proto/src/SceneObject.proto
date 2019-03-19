@@ -1,0 +1,7 @@
+syntax="proto3";
+
+package atom.proto;
+
+message SceneObject {
+	string Name=1;
+}

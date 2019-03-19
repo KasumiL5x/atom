@@ -1,0 +1,9 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+message TextureData {
+	string Filename=1;  /**< Local filename of the texture. */
+	string Extension=2; /**< Extension of the file. */
+	bytes Bytes=3;      /**< Raw bytes of the texture. */
+}

@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Matrix.proto";
+
+message MatrixChanged {
+	string ObjectName=1;
+	Matrix Matrix=2;
+}

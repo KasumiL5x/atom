@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package atom.proto.meshes;
+
+import "Vertex.proto";
+
+/**
+ * Sent when a destructive modification is made to a mesh,
+ * such that the vertex or index count is not the same.
+ */
+message MeshGeometryChanged {
+	string MeshName=1;                     /**< Name of the mesh that changed. */
+	repeated Vertex Vertices=2;	           /**< List of new vertices. */
+	repeated int32 Indices=3[packed=true]; /**< List of new indices. */
+}

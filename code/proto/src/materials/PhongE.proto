@@ -1,0 +1,31 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "materials/TexturedParameter.proto";
+
+message PhongE {
+	//
+	// lambert stuff
+
+	TexturedParameter Color=1;             /**< Base color, as Color. */
+	TexturedParameter Transparency=2;      /**< Transparent color, as Color. */
+	TexturedParameter AmbientColor=3;      /**< Ambient color, as Color. */
+	TexturedParameter Incandescence=4;     /**< Incandescent color, as Color. */
+	string BumpMap=5;                      /**< Name of bump map texture. */
+	TexturedParameter DiffuseAmount=6;     /**< Diffuse intensity, as float. */
+	TexturedParameter Translucence=7;      /**< Translucent amount, as float. */
+	TexturedParameter TranslucenceDepth=8; /**< Translucent depth, as float. */
+	TexturedParameter TranslucenceFocus=9; /**< Translucent focus, as float. */
+	TexturedParameter GlowIntensity=10;    /**< Glow intensity, as float. */
+
+	//
+	// phong e stuff
+	
+	TexturedParameter Roughness=11;      /**< Surface roughness, as float. */
+	TexturedParameter HighlightSize=12;  /**< Size of highlight, as float. */
+	TexturedParameter Whiteness=13;      /**< Whiteness, as Color. */
+	TexturedParameter SpecularColor=14;  /**< Specular color, as Color. */
+	TexturedParameter Reflectivity=15;   /**< Reflectivity amount, as float. */
+	TexturedParameter ReflectedColor=16; /**< Reflected color, as Color. */
+}

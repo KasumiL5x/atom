@@ -1,0 +1,25 @@
+syntax="proto3";
+
+package atom.proto.lights;
+
+import "lights/LightType.proto";
+import "Vector3.proto";
+import "Color.proto";
+
+message Light {
+	string Name=1;             /**< Name of the light. */
+	LightType Type=2;          /**< Type of light source. */
+	Vector3 Position=3;        /**< World-space position (point, spot). */
+	Vector3 Direction=4;       /**< World-space direction (directional, spot). */
+	float Range=5;             /**< Light range (point, spot). */
+	Color Color=6;             /**< Light color. */
+	float Intensity=7;         /**< Light intensity. */
+	float ConeAngle=8;         /**< Interior cone angle in degrees (spot). */
+	float PenumbraAngle=9;     /**< Penumbra angle in degrees (spot). */
+	float Dropoff=10;          /**< Light dropoff (spot). */
+	bool Shadows=11;           /**< Whether shadows are enabled. */
+	int32 ShadowResolution=12; /**< Shadow resolution. */
+	float ShadowBias=13;       /**< Shadow bias. */
+	Color ShadowColor=14;      /**< Shadow color. */
+	bool InitialVisibility=15; /**< Visibility upon creation. */
+}

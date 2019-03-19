@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package atom.proto.meshes;
+
+import "Vertex.proto";
+
+/**
+ * Sent when a number of vertices change in-place
+ * without disrupting the order or vertex count.
+ */
+message MeshPointsChanged {
+	string MeshName=1;          /**< Name of the mesh that changed. */
+	repeated Vertex Vertices=2; /**< List of vertices that changed. */
+}

@@ -1,0 +1,22 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Vector3.proto";
+
+message Camera {
+	string Name=1;
+
+	// view matrix
+	Vector3 Position=2;
+	Vector3 Target=3;
+	Vector3 Up=4;
+
+	// projection matrix
+	float FieldOfView=5;
+	float AspectRatio=6;
+	float NearPlane=7;
+	float FarPlane=8;
+
+	bool InitialVisibility=9; /**< Visibility upon creation. */
+}

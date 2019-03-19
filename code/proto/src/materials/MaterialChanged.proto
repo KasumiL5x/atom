@@ -1,0 +1,65 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "materials/TexturedParameter.proto";
+
+/**
+ * Sent when only a single channel of a material is modified.
+ * This contains a collection of every single unique material
+ * property.  The material is expected to already exist on the
+ * client side, and therefore the value that is set can simply
+ * be applied to the existing material.  It's messy but it's how
+ * protocol buffers work. 
+ */
+message MaterialChanged {
+	string MaterialName=1; /**< Name of the material that changed. */
+	oneof Property {
+		//
+		// lambert
+
+		TexturedParameter Color=2;              /**< Base color, as Color. */
+		TexturedParameter Transparency=3;       /**< Transparent color, as Color. */
+		TexturedParameter AmbientColor=4;       /**< Ambient color, as Color. */
+		TexturedParameter Incandescence=5;      /**< Incandescent color, as Color. */
+		string BumpMap=6;                       /**< Name of bump map texture. */
+		TexturedParameter DiffuseAmount=7;      /**< Diffuse intensity, as float. */
+		TexturedParameter Translucence=8;       /**< Translucent amount, as float. */
+		TexturedParameter TranslucenceDepth=9;  /**< Translucent depth, as float. */
+		TexturedParameter TranslucenceFocus=10; /**< Translucent focus, as float. */
+		TexturedParameter GlowIntensity=11;     /**< Glow intensity, as float. */
+
+		//
+		// shared
+
+		TexturedParameter SpecularColor=12;  /**< Specular color, as Color. */
+		TexturedParameter Reflectivity=13;   /**< Reflectivity amount, as float. */
+		TexturedParameter ReflectedColor=14; /**< Reflected color, as Color. */
+		TexturedParameter Roughness=15;      /**< Surface roughness, as float. */
+
+		//
+		// phong
+
+		TexturedParameter CosinePower=16; /**< Specular power, as float. */
+
+		//
+		// phong e
+
+		TexturedParameter HighlightSize=17; /**< Size of highlight, as float. */
+		TexturedParameter Whiteness=18;     /**< Whiteness, as Color. */
+
+		//
+		// blinn
+
+		TexturedParameter Eccentricity=19;    /**< Eccentricity, as float. */
+		TexturedParameter SpecularRollOff=20; /**< Specular roll off, as float. */
+
+		//
+		// aniso
+
+		TexturedParameter Angle=21;        /**< Angle, as float. */
+		TexturedParameter SpreadX=22;      /**< Spread X, as float. */
+		TexturedParameter SpreadY=23;      /**< Spread Y, as float. */
+		TexturedParameter FresnelIndex=24; /**< Fresnel index of refraction, as float. */
+	}
+}

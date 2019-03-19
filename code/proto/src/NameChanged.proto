@@ -1,0 +1,8 @@
+syntax="proto3";
+
+package atom.proto;
+
+message NameChanged {
+	string OldName=1;
+	string NewName=2;
+}

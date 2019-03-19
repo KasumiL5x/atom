@@ -1,0 +1,8 @@
+syntax="proto3";
+
+package atom.proto;
+
+message VisibilityChanged {
+	string ObjectName=1;
+	bool Visible=2;
+}

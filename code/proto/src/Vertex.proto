@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Vector2.proto";
+import "Vector3.proto";
+import "Color.proto";
+
+message Vertex {
+	int32 Index=1;
+	Vector3 Position=2;
+	Vector3 Normal=3;
+	repeated Vector2 Texcoord=4;
+	repeated Vector3 Tangent=5;
+	repeated Vector3 Binormal=6;
+	repeated Color Color=7;
+}

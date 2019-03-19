@@ -1,0 +1,15 @@
+code/atom/bin
+code/atom/tmp
+*.suo
+
+code/proto/cpp
+code/proto/cs
+code/proto/java
+code/proto/objc
+code/proto/py
+code/proto/rb
+
+code/client/AtomClientDX/bin
+code/client/AtomClientDX/obj
+code/client/AtomClientDX/Content/bin
+code/client/AtomClientDX/Content/obj

@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+enum MaterialType {
+	kMaterialTypeLambert=0;
+	kMaterialTypePhong=1;
+	kMaterialTypePhongE=2;
+	kMaterialTypeBlinn=3;
+	kMaterialTypeAnisotropic=4;
+}

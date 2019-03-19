@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Matrix.proto";
+
+message Annotation {
+	string Name=1;
+	string Text=2;
+	Matrix World=3;
+	bool InitialVisibility=4; /**< Visibility upon creation. */
+}

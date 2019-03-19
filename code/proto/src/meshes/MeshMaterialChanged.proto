@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package atom.proto.meshes;
+
+/**
+ * Sent when a mesh's material is re/assigned.
+ */
+message MeshMaterialChanged {
+	string MeshName=1;     /**< Name of the mesh that changed. */
+	string MaterialName=2; /**< Name of the newly assigned material. */
+}

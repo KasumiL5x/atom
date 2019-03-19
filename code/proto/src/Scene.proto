@@ -1,0 +1,25 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "SceneObject.proto";
+
+message Scene {
+	enum Reason {
+		kRebuildOnConnected=0; /**< When a connection is made, the scene is sent. */
+		kRebuildOnNew=1;       /**< A new scene was created.  This can be treat as empty. */
+		kRebuildOnOpen=2;      /**< A new scene was opened.  This can be treat as a full scene. */ 
+		kAdded=3;              /**< Nodes listed have been added to the scene. */
+		kRemoved=4;            /**< Nodes listed have been removed from the scene. */
+	}
+
+	Reason TransferReason=1;
+	repeated SceneObject Meshes=2;
+	repeated SceneObject Lights=3;
+	repeated SceneObject Cameras=4;
+	repeated SceneObject Materials=5;
+	repeated SceneObject Textures=6;
+	repeated SceneObject Transforms=7;
+	repeated SceneObject Annotations=8;
+	repeated SceneObject Curves=9;
+}

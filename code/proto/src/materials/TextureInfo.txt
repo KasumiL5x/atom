@@ -1,0 +1,49 @@
+Textures support any channel or combination of channels.
+
+Lambert:
+	Color              (RGB/Texture)
+	Transparency       (RGB/Texture)
+	Ambient color      (RGB/Texture)
+	Incandescence      (RGB/Texture)
+	Bump Mapping       (placeTexture2D/Texture)
+	Diffuse            (R/Texture)
+	Translucence       (R/Texture)
+	Translucence Depth (R/Texture)
+	Translucence Focus (R/Texture)
+	Glow Intensity     (R/Texture)
+
+Anisotropic:
+	Lambert properties
+	Angle                    (R/Texture)
+	Spread X                 (R/Texture)
+	Spread Y                 (R/Texture)
+	Roughness                (R/Texture)
+	Fresnel Index            (R/Texture)
+	Specular Color           (RGB/Texture)
+	Reflectivity             (R/Texture)
+	Reflected Color          (RGB/Texture)
+	Anisotropic Reflectivity (bool)
+
+Blinn:
+	Lambert properties
+	Eccentricity      (R/Texture)
+	Specular Roll Off (R/Texture)
+	Specular Color    (RGB/Texture)
+	Reflectivity      (R/Texture)
+	Reflected Color   (RGB/Texture)
+
+Phong:
+	Lambert properties
+	Cosine Power    (R/Texture)
+	Specular Color  (RGB/Texture)
+	Reflectivity    (R/Texture)
+	Reflected Color (RGB/Texture)
+
+Phong E:
+	Lambert properties
+	Roughness (R/Texture)
+	Highlight Size (R/Texture)
+	Whiteness (RGB/Texture)
+	Specular Color (RGB/Texture)
+	Reflectivity (R/Texture)
+	Reflected Color (RGB/Texture)

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AtomClient.Scene.Annotation" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Scene\Annotation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Light" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QkbEAAEIHSAQIQQAEIQRIIACAZAXCIEBQqDYkgAAAAQ=</HashCode>
+      <FileName>Scene\Light.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Material" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAEAAAAAAAAAAQAAAAAACAAAAABEQAgAQ=</HashCode>
+      <FileName>Scene\Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Mesh" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAgEAAAAEAAAAAEAAAIAEQAAAAEIAACAEEEAA=</HashCode>
+      <FileName>Scene\Mesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Named" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scene\Named.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Shape" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAQAAAAAAAAA=</HashCode>
+      <FileName>Scene\Shape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Texture" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Scene\Texture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AtomClient.Scene.Xform" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAIAQAAAAAAAAA=</HashCode>
+      <FileName>Scene\Xform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

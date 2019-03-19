@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\MTLog.cpp" />
+    <ClCompile Include="src\PluginMain.cpp" />
+    <ClCompile Include="src\commands\ArgParser.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\WatchCmd.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server\Message.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server\Server.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server\Connection.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\MeshWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\LightWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\CameraWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\MaterialWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\TextureWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Anisotropic.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Blinn.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Lambert.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Material.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\MaterialChanged.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\MaterialType.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Phong.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\PhongE.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\Texture.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\TextureChanged.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\TextureData.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\materials\TexturedParameter.pb.cc">
+      <Filter>proto\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\lights\Light.pb.cc">
+      <Filter>proto\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\lights\LightChanged.pb.cc">
+      <Filter>proto\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\lights\LightType.pb.cc">
+      <Filter>proto\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\meshes\Mesh.pb.cc">
+      <Filter>proto\meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\meshes\MeshGeometryChanged.pb.cc">
+      <Filter>proto\meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\meshes\MeshMaterialChanged.pb.cc">
+      <Filter>proto\meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\AtomMessage.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Camera.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Color.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Matrix.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Scene.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\SceneObject.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Vector2.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Vector3.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Vertex.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\NameChanged.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\UnwatchCmd.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\AtomDag.cpp">
+      <Filter>AtomDag</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Component.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\XformWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Node.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Texture.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Xform.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Mesh.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Material.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Light.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Camera.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Utility.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Annotation.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Annotation.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\AnnotationWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Curve.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtomDag\Nodes\Curve.cpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\watchers\CurveWatcher.cpp">
+      <Filter>commands\watchers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\MatrixChanged.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\meshes\MeshPointsChanged.pb.cc">
+      <Filter>proto\meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\VisibilityChanged.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proto\Transform.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\ConfigFile.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\MTLog.hpp" />
+    <ClInclude Include="src\Utils.hpp" />
+    <ClInclude Include="src\ProtobufHelper.hpp" />
+    <ClInclude Include="src\commands\ArgParser.hpp">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\ICommandEater.hpp">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\WatchCmd.hpp">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManualResetEvent.hpp" />
+    <ClInclude Include="src\server\Server.hpp">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\server\Connection.hpp">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\server\Message.hpp">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\IWatchHandler.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\MeshWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\LightWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\CameraWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\MaterialWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\TextureWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Anisotropic.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Blinn.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Lambert.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Material.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\MaterialChanged.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\MaterialType.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Phong.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\PhongE.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\Texture.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\TextureChanged.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\TextureData.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\materials\TexturedParameter.pb.h">
+      <Filter>proto\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\lights\Light.pb.h">
+      <Filter>proto\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\lights\LightChanged.pb.h">
+      <Filter>proto\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\lights\LightType.pb.h">
+      <Filter>proto\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\meshes\Mesh.pb.h">
+      <Filter>proto\meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\meshes\MeshGeometryChanged.pb.h">
+      <Filter>proto\meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\meshes\MeshMaterialChanged.pb.h">
+      <Filter>proto\meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\AtomMessage.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Camera.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Color.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Matrix.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Scene.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\SceneObject.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Vector2.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Vector3.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Vertex.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\NameChanged.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\UnwatchCmd.hpp">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\AtomDag.hpp">
+      <Filter>AtomDag</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Component.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\XformWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Node.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Texture.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Xform.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Mesh.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Material.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Light.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Camera.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\DagCallbacks.hpp">
+      <Filter>AtomDag</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\DagType.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Utility.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Annotation.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Annotation.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\AnnotationWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Curve.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtomDag\Nodes\Curve.hpp">
+      <Filter>AtomDag\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\watchers\CurveWatcher.hpp">
+      <Filter>commands\watchers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\MatrixChanged.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\meshes\MeshPointsChanged.pb.h">
+      <Filter>proto\meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\VisibilityChanged.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto\Transform.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\ConfigFile.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="proto">
+      <UniqueIdentifier>{ac7566c4-8c98-4fdc-b512-d67b8fad54e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commands">
+      <UniqueIdentifier>{518253e0-ade9-4db1-9639-9906b41c7708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{b0a60806-7b5b-4f12-b39f-371232d22bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proto\materials">
+      <UniqueIdentifier>{4a74b6f3-1eb3-462b-bb8f-9d862c366d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commands\watchers">
+      <UniqueIdentifier>{9b93908f-f34b-4c50-96fc-6903ed395b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proto\lights">
+      <UniqueIdentifier>{6dd3d92d-dfe4-4ddd-a5b9-197ae5d2295d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proto\meshes">
+      <UniqueIdentifier>{41664291-b177-4a53-b1d1-4bbdd3248994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomDag">
+      <UniqueIdentifier>{6cd0ce71-856e-4674-bede-876964b99f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomDag\Nodes">
+      <UniqueIdentifier>{05112dfa-60ec-4749-ad50-8451e744e3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{514fa6a7-2398-443e-948f-a42690e84211}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NodeClassDiagram.cd" />
+  </ItemGroup>
+</Project>

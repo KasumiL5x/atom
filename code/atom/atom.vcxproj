@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDebug|x64">
+      <Configuration>ReleaseDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AtomDag\AtomDag.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Annotation.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Camera.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Curve.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Light.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Material.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Mesh.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Node.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Texture.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Utility.cpp" />
+    <ClCompile Include="src\AtomDag\Nodes\Xform.cpp" />
+    <ClCompile Include="src\commands\ArgParser.cpp" />
+    <ClCompile Include="src\commands\UnwatchCmd.cpp" />
+    <ClCompile Include="src\commands\WatchCmd.cpp" />
+    <ClCompile Include="src\commands\watchers\AnnotationWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\CameraWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\CurveWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\LightWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\MaterialWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\MeshWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\TextureWatcher.cpp" />
+    <ClCompile Include="src\commands\watchers\XformWatcher.cpp" />
+    <ClCompile Include="src\MTLog.cpp" />
+    <ClCompile Include="src\PluginMain.cpp" />
+    <ClCompile Include="src\proto\Annotation.pb.cc" />
+    <ClCompile Include="src\proto\AtomMessage.pb.cc" />
+    <ClCompile Include="src\proto\Camera.pb.cc" />
+    <ClCompile Include="src\proto\Color.pb.cc" />
+    <ClCompile Include="src\proto\Component.pb.cc" />
+    <ClCompile Include="src\proto\Curve.pb.cc" />
+    <ClCompile Include="src\proto\lights\Light.pb.cc" />
+    <ClCompile Include="src\proto\lights\LightChanged.pb.cc" />
+    <ClCompile Include="src\proto\lights\LightType.pb.cc" />
+    <ClCompile Include="src\proto\materials\Anisotropic.pb.cc" />
+    <ClCompile Include="src\proto\materials\Blinn.pb.cc" />
+    <ClCompile Include="src\proto\materials\Lambert.pb.cc" />
+    <ClCompile Include="src\proto\materials\Material.pb.cc" />
+    <ClCompile Include="src\proto\materials\MaterialChanged.pb.cc" />
+    <ClCompile Include="src\proto\materials\MaterialType.pb.cc" />
+    <ClCompile Include="src\proto\materials\Phong.pb.cc" />
+    <ClCompile Include="src\proto\materials\PhongE.pb.cc" />
+    <ClCompile Include="src\proto\materials\Texture.pb.cc" />
+    <ClCompile Include="src\proto\materials\TextureChanged.pb.cc" />
+    <ClCompile Include="src\proto\materials\TextureData.pb.cc" />
+    <ClCompile Include="src\proto\materials\TexturedParameter.pb.cc" />
+    <ClCompile Include="src\proto\Matrix.pb.cc" />
+    <ClCompile Include="src\proto\MatrixChanged.pb.cc" />
+    <ClCompile Include="src\proto\meshes\Mesh.pb.cc" />
+    <ClCompile Include="src\proto\meshes\MeshGeometryChanged.pb.cc" />
+    <ClCompile Include="src\proto\meshes\MeshMaterialChanged.pb.cc" />
+    <ClCompile Include="src\proto\meshes\MeshPointsChanged.pb.cc" />
+    <ClCompile Include="src\proto\NameChanged.pb.cc" />
+    <ClCompile Include="src\proto\Scene.pb.cc" />
+    <ClCompile Include="src\proto\SceneObject.pb.cc" />
+    <ClCompile Include="src\proto\Transform.pb.cc" />
+    <ClCompile Include="src\proto\Vector2.pb.cc" />
+    <ClCompile Include="src\proto\Vector3.pb.cc" />
+    <ClCompile Include="src\proto\Vertex.pb.cc" />
+    <ClCompile Include="src\proto\VisibilityChanged.pb.cc" />
+    <ClCompile Include="src\server\Connection.cpp" />
+    <ClCompile Include="src\server\Message.cpp" />
+    <ClCompile Include="src\server\Server.cpp" />
+    <ClCompile Include="src\utils\ConfigFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AtomDag\AtomDag.hpp" />
+    <ClInclude Include="src\AtomDag\DagCallbacks.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Annotation.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Camera.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Curve.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Light.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Material.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Mesh.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Node.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Texture.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\DagType.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Utility.hpp" />
+    <ClInclude Include="src\AtomDag\Nodes\Xform.hpp" />
+    <ClInclude Include="src\commands\ArgParser.hpp" />
+    <ClInclude Include="src\commands\ICommandEater.hpp" />
+    <ClInclude Include="src\commands\UnwatchCmd.hpp" />
+    <ClInclude Include="src\commands\WatchCmd.hpp" />
+    <ClInclude Include="src\commands\watchers\AnnotationWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\CameraWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\CurveWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\IWatchHandler.hpp" />
+    <ClInclude Include="src\commands\watchers\LightWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\MaterialWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\MeshWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\TextureWatcher.hpp" />
+    <ClInclude Include="src\commands\watchers\XformWatcher.hpp" />
+    <ClInclude Include="src\MTLog.hpp" />
+    <ClInclude Include="src\ProtobufHelper.hpp" />
+    <ClInclude Include="src\ManualResetEvent.hpp" />
+    <ClInclude Include="src\proto\Annotation.pb.h" />
+    <ClInclude Include="src\proto\AtomMessage.pb.h" />
+    <ClInclude Include="src\proto\Camera.pb.h" />
+    <ClInclude Include="src\proto\Color.pb.h" />
+    <ClInclude Include="src\proto\Component.pb.h" />
+    <ClInclude Include="src\proto\Curve.pb.h" />
+    <ClInclude Include="src\proto\lights\Light.pb.h" />
+    <ClInclude Include="src\proto\lights\LightChanged.pb.h" />
+    <ClInclude Include="src\proto\lights\LightType.pb.h" />
+    <ClInclude Include="src\proto\materials\Anisotropic.pb.h" />
+    <ClInclude Include="src\proto\materials\Blinn.pb.h" />
+    <ClInclude Include="src\proto\materials\Lambert.pb.h" />
+    <ClInclude Include="src\proto\materials\Material.pb.h" />
+    <ClInclude Include="src\proto\materials\MaterialChanged.pb.h" />
+    <ClInclude Include="src\proto\materials\MaterialType.pb.h" />
+    <ClInclude Include="src\proto\materials\Phong.pb.h" />
+    <ClInclude Include="src\proto\materials\PhongE.pb.h" />
+    <ClInclude Include="src\proto\materials\Texture.pb.h" />
+    <ClInclude Include="src\proto\materials\TextureChanged.pb.h" />
+    <ClInclude Include="src\proto\materials\TextureData.pb.h" />
+    <ClInclude Include="src\proto\materials\TexturedParameter.pb.h" />
+    <ClInclude Include="src\proto\Matrix.pb.h" />
+    <ClInclude Include="src\proto\MatrixChanged.pb.h" />
+    <ClInclude Include="src\proto\meshes\Mesh.pb.h" />
+    <ClInclude Include="src\proto\meshes\MeshGeometryChanged.pb.h" />
+    <ClInclude Include="src\proto\meshes\MeshMaterialChanged.pb.h" />
+    <ClInclude Include="src\proto\meshes\MeshPointsChanged.pb.h" />
+    <ClInclude Include="src\proto\NameChanged.pb.h" />
+    <ClInclude Include="src\proto\Scene.pb.h" />
+    <ClInclude Include="src\proto\SceneObject.pb.h" />
+    <ClInclude Include="src\proto\Transform.pb.h" />
+    <ClInclude Include="src\proto\Vector2.pb.h" />
+    <ClInclude Include="src\proto\Vector3.pb.h" />
+    <ClInclude Include="src\proto\Vertex.pb.h" />
+    <ClInclude Include="src\proto\VisibilityChanged.pb.h" />
+    <ClInclude Include="src\server\Connection.hpp" />
+    <ClInclude Include="src\server\Message.hpp" />
+    <ClInclude Include="src\server\Server.hpp" />
+    <ClInclude Include="src\Utils.hpp" />
+    <ClInclude Include="src\utils\ConfigFile.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NodeClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{681412B0-F197-4A2F-9263-DEA2E8690146}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="atom.props" Condition="exists('atom.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="atom.props" Condition="exists('atom.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="atom.props" Condition="exists('atom.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <TargetExt>.mll</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>D:\programs\Autodesk\Maya2016\include;./thirdparty/asio-1.10.6/inc;./thirdparty/protobuf/inc;./thirdparty/ccmath/src;./src/proto/;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\programs\Autodesk\Maya2016\lib;./thirdparty/protobuf/lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)-d</TargetName>
+    <IntDir>tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;NT_PLUGIN;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SECURE_SCL_DEPRECATE=0;_CRT_SECURE_NO_DEPRECATE;TBB_USE_DEBUG=0;__TBB_LIB_NAME=tbb.lib;Bits64_;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenMaya.lib;OpenMayaFX.lib;Foundation.lib;libprotobufd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)bin\$(Configuration)\$(TargetName)$(TargetExt)" "D:\tools\maya\plug-ins\$(TargetName)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying MLL to Maya's plug-ins directory.</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <TargetExt>.mll</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>D:\programs\Autodesk\Maya2016\include;./thirdparty/asio-1.10.6/inc;./thirdparty/protobuf/inc;./thirdparty/ccmath/src;./src/proto/;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\programs\Autodesk\Maya2016\lib;./thirdparty/protobuf/lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)-rd</TargetName>
+    <IntDir>tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;NT_PLUGIN;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SECURE_SCL_DEPRECATE=0;_CRT_SECURE_NO_DEPRECATE;TBB_USE_DEBUG=0;__TBB_LIB_NAME=tbb.lib;Bits64_;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenMaya.lib;OpenMayaFX.lib;Foundation.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)bin\$(Configuration)\$(TargetName)$(TargetExt)" "D:\tools\maya\plug-ins\$(TargetName)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying MLL to Maya's plug-ins directory.</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <TargetExt>.mll</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>D:\programs\Autodesk\Maya2016\include;./thirdparty/asio-1.10.6/inc;./thirdparty/protobuf/inc;./thirdparty/ccmath/src;./src/proto/;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\programs\Autodesk\Maya2016\lib;./thirdparty/protobuf/lib;$(LibraryPath)</LibraryPath>
+    <IntDir>tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;NT_PLUGIN;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SECURE_SCL_DEPRECATE=0;_CRT_SECURE_NO_DEPRECATE;TBB_USE_DEBUG=0;__TBB_LIB_NAME=tbb.lib;Bits64_;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenMaya.lib;OpenMayaFX.lib;Foundation.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)bin\$(Configuration)\$(TargetName)$(TargetExt)" "D:\tools\maya\plug-ins\$(TargetName)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying MLL to Maya's plug-ins directory.</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

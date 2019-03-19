@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Vector3.proto";
+import "Matrix.proto";
+
+message Curve {
+	string Name=1;
+	repeated Vector3 CV=2;
+	Matrix World=3;
+	bool InitialVisibility=4; /**< Visibility upon creation. */
+}

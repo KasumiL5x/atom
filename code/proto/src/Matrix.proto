@@ -1,0 +1,9 @@
+syntax="proto3";
+
+package atom.proto;
+
+message Matrix {
+	uint32 Rows = 1;
+	uint32 Cols = 2;
+	repeated float M=3[packed=true];
+}

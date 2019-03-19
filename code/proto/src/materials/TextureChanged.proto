@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "materials/TextureData.proto";
+import "Vector2.proto";
+
+message TextureChanged {
+	string TextureName=1; /**< Name of the texture that changed. */
+	oneof Property {
+		TextureData Data=2;       /**< Filename and raw data. */
+		Vector2 TranslateFrame=3; /**< TODO */
+		float RotateFrame=4;      /**< TODO */
+		bool MirrorU=5;           /**< Mirror texcoords in U. */
+		bool MirrorV=6;           /**< Mirror texcoords in V. */
+		bool WrapU=7;             /**< Wrap texcoords in U. */
+		bool wrapV=8;             /**< Wrap texcoords in V. */
+		Vector2 Repeat=9;         /**< UV tiling. */
+		Vector2 Offset=10;        /**< UV offset. */
+		float Rotate=11;          /**< Rotation in degrees. */
+		Vector2 Noise=12;         /**< Arbitrary noise. */
+	}
+}

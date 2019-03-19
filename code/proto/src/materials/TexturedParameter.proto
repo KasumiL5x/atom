@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "Color.proto";
+
+message TexturedParameter {
+	string Texture=1; /**< Name of the texture, if present. */
+	oneof Parameter {
+		float AsFloat=2; /**< Parameter as a float. */
+		Color AsColor=3; /**< Parameter as a Color. */
+	}
+}

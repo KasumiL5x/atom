@@ -1,0 +1,46 @@
+syntax="proto3";
+
+package atom.proto;
+
+import "Scene.proto";
+import "meshes/Mesh.proto";
+import "meshes/MeshPointsChanged.proto";
+import "meshes/MeshGeometryChanged.proto";
+import "meshes/MeshMaterialChanged.proto";
+import "Camera.proto";
+import "lights/Light.proto";
+import "lights/LightChanged.proto";
+import "materials/Material.proto";
+import "materials/MaterialChanged.proto";
+import "materials/Texture.proto";
+import "materials/TextureChanged.proto";
+import "NameChanged.proto";
+import "Transform.proto";
+import "Annotation.proto";
+import "Curve.proto";
+import "MatrixChanged.proto";
+import "VisibilityChanged.proto";
+
+message AtomMessage {
+	oneof Msg {
+		string DebugMessage=1;
+		Scene Scene=2;
+		meshes.Mesh Mesh=3;
+		meshes.MeshPointsChanged MeshPointsChanged=4;
+		meshes.MeshGeometryChanged MeshGeometryChanged=5;
+		meshes.MeshMaterialChanged MeshMaterialChanged=6;
+		Camera Camera=7;
+		lights.Light Light=8;
+		lights.LightChanged LightChanged=9;
+		materials.Material Material=10;
+		materials.MaterialChanged MaterialChanged=11;
+		materials.Texture Texture=12;
+		materials.TextureChanged TextureChanged=13;
+		NameChanged NameChanged=14;
+		Transform Transform=15;
+		Annotation Annotation=16;
+		Curve Curve=17;
+		MatrixChanged MatrixChanged=18;
+		VisibilityChanged VisibilityChanged=19;
+	}
+}

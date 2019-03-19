@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package atom.proto.meshes;
+
+import "Vertex.proto";
+import "Matrix.proto";
+
+message Mesh {
+	string Name=1;                         /**< Name of the mesh. */
+	repeated Vertex Vertices=2;            /**< List of vertices. */
+	repeated int32 Indices=3[packed=true]; /**< List of indices. */
+	repeated string TexcoordSetNames=4;    /**< List of texcoord set names.  Vertex Texcoord/Tangent/Binormal are the same length as this. */
+	string MaterialName=5;                 /**< Material name. */
+	Matrix World=6;                        /**< World matrix for using the mesh standalone without an object. */
+	bool InitialVisibility=7;              /**< Visibility upon creation. */
+}

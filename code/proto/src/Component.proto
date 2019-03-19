@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package atom.proto;
+
+message Component {
+	enum ComponentType {
+		kMesh=0;
+		kLight=2;
+		kCamera=3;
+		kAnnotation=4;
+		kCurve=5;
+	}
+	ComponentType Type=1;
+	string Name=2;
+}

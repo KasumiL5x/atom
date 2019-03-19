@@ -1,0 +1,22 @@
+syntax="proto3";
+
+package atom.proto.materials;
+
+import "materials/MaterialType.proto";
+import "materials/Lambert.proto";
+import "materials/Phong.proto";
+import "materials/PhongE.proto";
+import "materials/Blinn.proto";
+import "materials/Anisotropic.proto";
+
+message Material {
+	string Name=1;
+	MaterialType Type=2;
+	oneof Data {
+		Lambert Lambert=3;
+		Phong Phong=4;
+		PhongE Phonge=5;
+		Blinn Blinn=6;
+		Anisotropic Anisotropic=7;
+	}
+}
